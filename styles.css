@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(20, 30px);
+    gap: 1px;
+    justify-content: center;
+}
+
+.cell {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    display: inline-block;
+    background-color: white;
+    cursor: pointer;
+}
+
+.cell.start {
+    background-color: green;
+}
+
+.cell.end {
+    background-color: red;
+}
+
+.cell.wall {
+    background-color: gray;
+}
+
+.cell.visited {
+    background-color: lightblue;
+}
+
+.cell.path {
+    background-color: yellow;
+}
+
+#info-panel, #stats {
+    margin-top: 20px;
+    text-align: left;
+}
+
+#stats {
+    margin-top: 30px;
+}
