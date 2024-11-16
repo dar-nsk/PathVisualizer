@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pathfinding Visualizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pathfinding Visualizer</h1>
+        <div class="controls">
+            <label for="algorithm">Choose Algorithm:</label>
+            <select id="algorithm">
+                <option value="bfs">Breadth-First Search</option>
+                <option value="dijkstra">Dijkstra's Algorithm</option>
+                <option value="astar">A* Algorithm</option>
+            </select>
+            <button id="visualize-btn">Visualize</button>
+            <button id="reset-btn">Reset Grid</button>
+        </div>
+        <div id="grid-container"></div>
+        <div id="info-panel">
+            <h2>Algorithm Explanation</h2>
+            <p id="explanation">Select an algorithm to see its explanation here.</p>
+        </div>
+        <div id="stats">
+            <h2>Pathfinding Metrics</h2>
+            <p>Nodes Visited: <span id="nodes-visited">0</span></p>
+            <p>Path Length: <span id="path-length">0</span></p>
+            <p>Execution Time: <span id="execution-time">0</span> ms</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
